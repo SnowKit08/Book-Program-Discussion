@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Book Program Discussion</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+
+.custom-color {
+	color:#7FB5B5;
+}
+.custom-background-color {
+	background-color:#7FB5B5;
+}
+</style>
+<body>
+<!-- Navigation bar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-large">
+	<img class="w3-bar-item w3-padding-small" width="75" height="55" src="Logo.jpg" alt="Booklogo">
+	<a class="w3-bar-item w3-padding-16 custom-color"><strong>Book Program Discussion</strong></a>
+    <div class="w3-right">
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-white custom-color">About Us</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-white custom-color">Books</a>
+	  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-white custom-color">Get Started</a>
+	  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-white custom-color">News</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-white custom-color">Members</a>
+      <a href="#" class="w3-bar-item w3-button custom-background-color w3-padding-large w3-hover-white w3-text-black">Login</a>
+    </div>
+  </div>  
+</div>
+
+
+
+
+
+<!-- Header image -->
+<div style="height:350px;background-image:url('bookstorecrop(1).jpg');background-size:cover" class="w3-display-container">
+
+
+<div class="w3-half w3-display-middle w3-center w3-padding-top-64 w3-padding-large">
+	<span class="w3-transparent w3-text-white" style=" font-size:50px; text-shadow:2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000000, 3px 3px black,5px 5px #7FB5B5;"><strong>Book Program Discussion</strong></span>
+<div class="w3-padding-top-32">
+	<button id="trigger-modal" class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-round-xlarge w3-border" onclick="document.getElementById('bookclubrego').style.display='block'">REGISTER NOW</button>
+</div>
+
+</div>
+</div>
+
+<!-- Rego Modal window-->
+ <div id="bookclubrego" class="w3-modal w3-animate-opacity">
+  <div id="form" class="w3-modal-content" style="padding:15px">
+    <div class="w3-container w3-white w3-padding-large">
+      <i onclick="document.getElementById('bookclubrego').style.display='none'" class="fa fa-remove w3-xlarge w3-button w3-transparent w3-right w3-xlarge"></i>
+      <h2 class="w3-wide w3-center w3-padding-large">REGISTRATION FORM</h2>
+	  <div id="userDetails">
+			<div class="w3-display-container w3-half w3-padding-small">
+				<label for="fname">First name:</label>
+				<p><input class="w3-input w3-border w3-light-grey" type="text" placeholder="Enter your given name"></p>
+			</div>
+			<div class="w3-display-container w3-half w3-padding-small">
+				<label for="lname">Last name:</label><br>
+				<p><input class="w3-input w3-border w3-light-grey" type="text" placeholder="Enter your surname"></p>
+			</div>
+			<div class="w3-padding-small w3-padding-top-32 w3-margin-bottom">
+				<label for="lname">Username:</label><br>
+			  <p><input class="w3-input w3-border w3-light-grey" type="text" placeholder="Enter a username"></p>
+			    <label for="lname">Password:</label><br>
+			  <p><input class="w3-input w3-border w3-light-grey" type="text" placeholder="Enter a password"></p>
+			</div>
+	  </div>
+	  <div id="addresses" class="w3-padding-small w3-margin-bottom">
+				<label for="homeaddr">Home Address:</label><br>
+			  <p><input class="w3-input w3-border w3-light-grey" type="text" placeholder="Enter your home address"></p>
+			    <label for="workaddr">Work Address:</label><br>
+			  <p><input class="w3-input w3-border w3-light-grey" type="text" placeholder="Enter your work address"></p>
+	  </div>
+	  <div id="contacts" class="display">
+			<div class="w3-display-container w3-half w3-padding-small">
+				<label for="MobNo">Mobile Number:</label>
+				<p><input class="w3-input w3-border w3-light-grey" type="text" placeholder="Enter your mobile number"></p>
+			</div>
+			<div class="w3-display-container w3-half w3-padding-small">
+				<label for="Email">Email:</label><br>
+				<p><input class="w3-input w3-border w3-light-grey" type="text" placeholder="Enter your email address"></p><br>
+			</div>
+	  </div>
+	  
+		<button type="button" class="w3-button w3-large w3-padding-large custom-background-color w3-margin-bottom w3-margin-right w3-right w3-round-xlarge" onclick="document.getElementById('bookclubrego').style.display='none'">REGISTER</button>
+
+	</div>
+  </div>
+</div>
+
+<!--The News and books container-->
+<div class="w3-container w3-black w3-padding-large w3-padding-48" id="news and books">
+	<div class="w3-content">
+	
+	<div class="w3-row-padding w3-center w3-margin-top" style="min-height:400px">
+		<div class="w3-third w3-padding-large">
+		  <div class="w3-card w3-text-black custom-background-color w3-container w3-padding-24 w3-center" style="min-height:400px; max-height:400px">
+			<h2>Latest News</h2><br>
+			  <img class="w3-center" width="100%" src="Groupphoto.jpg" alt="group smiling">
+			  <p>New local discussion group from Auckland goes on trip inspired by . . . <a href="#" class="w3-hover-text-blue">see more</a></p>
+		  </div>
+		</div>
+
+		<div class="w3-third w3-padding-large">
+		  <div class="w3-card w3-display-container custom-background-color w3-container" style="min-height:400px; max-height:400px">
+				<div class="w3-display-topleft w3-text-black w3-white w3-padding">POPULAR</div>
+			  <div class="w3-center "><img class="w3-center w3-padding-top-64" height="300px" src="bookcover7.jpg" alt="bookcover"></div>
+			  <p class="w3-padding-small w3-text-black"><strong class="w3-large">Her Last Word</strong><br><i>by Mary Burton</i></p>
+		  </div>
+		</div>
+
+		<div class="w3-third w3-padding-large">
+		  <div class="w3-card w3-display-container custom-background-color w3-container" style="min-height:400px; max-height:400px">
+				<div class="w3-display-topleft w3-text-black w3-white w3-padding">NEW</div>
+			  <div class="w3-center "><img class="w3-center w3-padding-top-64" height="300px" src="bookcover2.jpg" alt="bookcover"></div>
+			  <p class="w3-padding-small w3-text-black"><strong class="w3-large">Once Night Falls</strong><br><i>by Roland Merullo</i></p>
+		  </div>
+		</div>
+		
+	</div>
+	</div>
+</div>
+
+
+<!-- Who are we container -->
+<div class="w3-container custom-background-color" id="about">
+  <div class="w3-content w3-padding-64" style="max-width:700px">
+    <h5 class="w3-center w3-padding-large "><span class="w3-tag w3-wide">WHO ARE WE?</span></h5>
+    <p class="w3-padding-large">Book Program Discussion (BPD) is a non-profit organization that lends books & professional discussion notes to book groups. In lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        
+	<div id="book quote" class="w3-panel w3-leftbar w3-white">
+      <p><strong><i>"A reader lives a thousand lives before he dies . . . The man who never reads lives only one."</i></strong></p>
+      <p>- George R.R. Martin</p>
+    </div>
+    
+   
+  </div>
+</div>
+
+<!-- Footer -->
+
+<footer class="w3-bar w3-black w3-padding-large">
+	<div class="w3-right">
+		<a href="#" class="w3-bar-item w3-padding w3-hover-text-white custom-color">Contact Us</a>
+		<a href="#" class="w3-bar-item w3-padding w3-hover-text-white custom-color">Privacy Policy</a>
+		<a href="#" class="w3-bar-item w3-padding w3-hover-text-white custom-color">Site Map</a>
+		<a href="#" class="w3-bar-item w3-padding w3-hover-text-white custom-color">Terms & Conditions</a>
+	</div>
+</footer>
+
+
+
+
+</body>
+</html>
